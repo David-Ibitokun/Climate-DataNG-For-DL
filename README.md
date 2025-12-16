@@ -43,32 +43,3 @@ python process_data_now.py
 ```bash
 python validate_datasets.py
 ```
-
-Preparing and pushing to GitHub
-
-If you want to create a new GitHub repository and push this project, here are two simple options.
-
-Option A — using the `gh` CLI (recommended if installed):
-
-```bash
-gh repo create <OWNER>/<REPO> --public --source=. --remote=origin --push
-```
-
-Option B — manual steps (works everywhere):
-
-```bash
-git init
-git add --all
-git commit -m "Initial import: processed datasets and scripts"
-# create a repo on GitHub via web and copy the remote URL, or use your ssh path
-git remote add origin git@github.com:<OWNER>/<REPO>.git
-git branch -M main
-git push -u origin main
-```
-
-Notes before pushing:
-- The repo contains processed CSVs under `data/`. If you prefer not to store large data in Git, consider removing or moving large files to `data/originals/` and using Git LFS for big binaries.
-- `.gitignore` already excludes common virtualenv and large binary patterns; review it before push.
-
-If you want, I can initialize the local git repo and make the first commit for you, or attempt to create the GitHub repo using `gh` if you authorize it. Which do you want me to do?
-
