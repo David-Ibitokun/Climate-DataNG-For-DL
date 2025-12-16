@@ -1,0 +1,6 @@
+Features:
+- annual_rainfall_mm: total rainfall per year (mm)
+- annual_mean_temp_c: annual mean temperature (°C)
+- annual_max_temp_c: annual maximum temperature (°C)
+- CO2_Emissions_kt: national CO2 emissions (kt)
+- Yield: crop yield (kg/ha)

@@ -1,0 +1,4 @@
+{
+  "feature_scales": {},
+  "notes": "Fill with mean/std or min/max per feature after preprocessing."
+}
